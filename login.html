@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso à Rede Wi-Fi</title>
+    
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="login.css">
+    
+    <!-- Link para o Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <style>
+        .form-check-label {
+            margin-bottom: 0; /* Remove o espaço abaixo da checkbox */
+        }
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center">
+            <img src="Hotspot/marcas.png" alt="Logo Câmara de Vereadores" class="img-fluid mb-4">
+            
+            <h1 class="mb-4">ACESSO A REDE WI-FI</h1>
+            
+            <form action="URL_DO_SERVIDOR" method="post">
+                <div class="form-group text-left">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" class="form-control" required>
+                </div>
+                
+                <div class="form-group text-left">
+                    <label for="email">EMAIL:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="privacy" name="privacy" required>
+                        <label class="form-check-label" for="privacy">Concordo com a <a href="#" class="text-primary" data-toggle="modal" data-target="#privacyModal">Política de Privacidade</a></label>
+                    </div>
+                </div>
+                
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-success btn-block">ACESSAR</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="privacyModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="privacyModalLabel">Política de Privacidade</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2>Política de Privacidade para Compartilhamento de Acesso à Internet</h2>
+                    
+                    <h3>1. Objetivo</h3>
+                    <p>
+                        Esta política de privacidade tem como objetivo esclarecer como os dados pessoais, especificamente CPF e e-mail, serão coletados, armazenados e utilizados para o compartilhamento de acesso à internet na Câmara de Vereadores de Santa Cruz do Capibaribe, em conformidade com o Marco Civil da Internet, a Lei Geral de Proteção de Dados (LGPD) e demais legislações aplicáveis.
+                    </p>
+                    
+                    <h3>2. Base Legal para Coleta de Dados</h3>
+                    <p>
+                        A coleta dos dados pessoais (CPF e e-mail) será realizada com base no consentimento explícito do titular dos dados, conforme disposto no Artigo 7º, Inciso I da Lei Geral de Proteção de Dados (Lei nº 13.709/2018). Ao fornecer seus dados, o usuário concorda com os termos desta política e autoriza o uso de seus dados para os fins especificados.
+                        <br>Importante: Caso o usuário não forneça o consentimento para a coleta dos dados, não será possível acessar a rede Wi-Fi disponibilizada pela Câmara de Vereadores.
+                    </p>
+                    
+                    <h3>3. Coleta de Dados</h3>
+                    <p>
+                        Os dados pessoais, como CPF e e-mail, serão coletados exclusivamente para a finalidade de comprovação do acesso à internet. Esses dados são necessários para garantir a segurança e a identificação dos usuários que utilizam a rede de internet da Câmara de Vereadores.
+                    </p>
+                    
+                    <h3>4. Finalidade do Tratamento de Dados</h3>
+                    <p>
+                        Os dados coletados serão utilizados exclusivamente para fins de registro e comprovação do acesso à internet, conforme exigido pelo Marco Civil da Internet. Em nenhuma hipótese, os dados serão utilizados para outras finalidades, como marketing, compartilhamento com terceiros, ou qualquer outro propósito alheio ao controle de acesso à rede.
+                    </p>
+                    
+                    <h3>5. Armazenamento e Segurança dos Dados</h3>
+                    <p>
+                        Os dados pessoais coletados serão armazenados de forma segura e criptografada, garantindo sua confidencialidade e integridade. Os registros de log gerados durante o uso da internet serão mantidos em local seguro, com acesso restrito a pessoas autorizadas.
+                    </p>
+                    
+                    <h3>6. Período de Retenção</h3>
+                    <p>
+                        Os dados pessoais coletados (CPF e e-mail) serão armazenados pelo período de 12 meses, conforme exigido pelo Marco Civil da Internet. Após esse período, os dados serão permanentemente excluídos de nossos sistemas. Apenas os registros de log, que não contêm dados pessoais identificáveis, serão mantidos após esse período, de acordo com as exigências legais.
+                    </p>
+                    
+                    <h3>7. Direitos dos Titulares dos Dados</h3>
+                    <p>
+                        Embora os dados não possam ser excluídos antes do término do período de 12 meses devido às exigências do Marco Civil da Internet, os usuários têm o direito de solicitar informações sobre quais dados estão armazenados e como estão sendo utilizados. Para exercer esse direito, os usuários devem entrar em contato com a administração da Câmara de Vereadores.
+                    </p>
+                    
+                    <h3>8. Alterações na Política de Privacidade</h3>
+                    <p>
+                        Esta política de privacidade pode ser atualizada periodicamente para refletir mudanças na legislação ou nas práticas de tratamento de dados da Câmara de Vereadores. Recomendamos que os usuários revisem esta política regularmente para se manterem informados sobre como seus dados estão sendo protegidos.
+                    </p>
+                    
+                    <h3>9. Contato</h3>
+                    <p>
+                        Em caso de dúvidas, preocupações ou solicitações relacionadas ao tratamento de seus dados pessoais, os usuários podem entrar em contato com a administração da Câmara de Vereadores de Santa Cruz do Capibaribe pelo e-mail [insira o e-mail de contato].
+                    </p>
+                    
+                    <p class="text-right">Santa Cruz do Capibaribe/PE, 20 de agosto de 2024</p>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link para o Bootstrap JS (opcional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
